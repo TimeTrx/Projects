@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+<title>334 Project Chat</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+<?php include 'chat.php';
+	  include 'checkchat.php';
+?>
+<div id="wrapper"> 
+<button type="logout">Logout<button/> 
+    <div id="chat"> <?php echo $allmessages;?></div>
+     
+    <form name="textarea">
+        <input name="messagearea" type="text" id="usermsg" size="45" />
+        <input name="submitbutton" type="submit"  id="submitmsg" value="Send" />
+		
+    </form>
+</div>
+</body>
+</html>
